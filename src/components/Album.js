@@ -16,7 +16,7 @@ import albumData from './../data/albums';
      
   render() {
      return (
-       <section className="album">
+     <section className="album">
          <section id="album-info">
          <img id="album-cover-art" src={this.state.album.albumCover} />
          <div className="album-details">
@@ -26,9 +26,9 @@ import albumData from './../data/albums';
            
            </div>
          </section>
-       </section>
-     );
-   }
- }
-
- export default Album;
+        </section>
+      );
+    }
+  }
+ 
+  export default Album;
