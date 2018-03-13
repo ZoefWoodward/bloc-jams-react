@@ -8,6 +8,7 @@ import albumData from './../data/albums';
      const album = albumData.find( album => {
        return album.slug === this.props.match.params.slug
      });
+       
  
      this.state = {
        album: album
@@ -22,7 +23,8 @@ import albumData from './../data/albums';
          <div className="album-details">
          <h1 id="album-title">{this.state.album.title}</h1>
          <h2 className="artist">{this.state.album.artist}</h2>
-         <div id="release-info">{this.state.album.releaseInfo}
+         <div id="release-info">
+         {this.state.album.releaseInfo}
          {this.state.album.year} 
          {this.state.album.label}</div>
            </div>
@@ -33,7 +35,19 @@ import albumData from './../data/albums';
          <col id="song-title-column" />
          <col id="song-duration-column" />
          </colgroup>
+         
          <tbody>
+         {
+        this.state.album.songs.map( (song, index) => 
+     <tr className="song" key={index}>
+            <td className="song-number">{index +1}</td>
+            <td className="ion-play"></td>
+            <td className="ion-pause"></td>
+         <td className="song-title">{song.title}</td>
+         <td className="song-duration">{song.duration}</td>
+      </tr>
+     )
+  }
          </tbody>
          </table>
         </section>
