@@ -18,14 +18,24 @@ import albumData from './../data/albums';
      return (
      <section className="album">
          <section id="album-info">
-         <img id="album-cover-art" src={this.state.album.albumCover} />
+         <img id="album-cover-art" alt="Album cover art" src={this.state.album.albumCover} />
          <div className="album-details">
          <h1 id="album-title">{this.state.album.title}</h1>
          <h2 className="artist">{this.state.album.artist}</h2>
-         <div id="release-info">{this.state.album.releaseInfo}</div>
-           
+         <div id="release-info">{this.state.album.releaseInfo}
+         {this.state.album.year} 
+         {this.state.album.label}</div>
            </div>
          </section>
+         <table id="song-list">
+         <colgroup>
+         <col id="song-number-column" />
+         <col id="song-title-column" />
+         <col id="song-duration-column" />
+         </colgroup>
+         <tbody>
+         </tbody>
+         </table>
         </section>
       );
     }
