@@ -17,10 +17,10 @@ import PlayerBar from './PlayerBar';
          isPlaying: false
      };
        
-         this.audioElement = document.createElement('audio');
+    this.audioElement = document.createElement('audio');
      this.audioElement.src = album.songs[0].audioSrc;
    }
-         play() {
+    play() {
          this.audioElement.play();
          this.setState({ isPlaying: true });
      }
@@ -55,7 +55,7 @@ import PlayerBar from './PlayerBar';
      
      handleNextClick(){
          const currentIndex = this.state.album.songs.findIndex(song => this.currentSong === song);
-         const newIndex = Math.max(0, currentIndex +1);
+         const newIndex = Math.max(currentIndex +1, this.state.album.songs.length -1);
          const newSong = this.state.album.songs[newIndex];
          this.setSong (newSong);
          this.play(newSong);
