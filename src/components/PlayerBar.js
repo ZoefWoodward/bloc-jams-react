@@ -43,7 +43,7 @@
                           />
                               
            <div className="icon ion-volume-high"></div>
-<div>Volume: {this.props.volumePercent} % </div>
+            <div>Volume: {this.props.volumePercent} % </div>
          </section>
        </section>
      );

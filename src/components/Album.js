@@ -9,7 +9,6 @@ import PlayerBar from './PlayerBar';
      const album = albumData.find( album => {
        return album.slug === this.props.match.params.slug
      });
-       
  
      this.state = {
        album: album,
