@@ -84,6 +84,12 @@ import PlayerBar from './PlayerBar';
          this.play(newSong);
          
      }
+     
+     handleTimeChange(e){
+         const newTime=this.audioElement.duration * e.target.value;
+         this.audioElement.currentTime= newTime;
+         this.setState({ currentTime: newTime });
+     }
     
    
   render() {
@@ -130,6 +136,7 @@ import PlayerBar from './PlayerBar';
             handleSongClick={() => this.handleSongClick(this.state.currentSong)}
             handlePrevClick={() => this.handlePrevClick()}
             handleNextClick={() => this.handleNextClick()}
+            handleTimeChange={(e)=> this.handleTimeChange(e)}
          />
        </section>
      );
