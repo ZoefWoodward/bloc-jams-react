@@ -93,7 +93,6 @@ import PlayerBar from './PlayerBar';
             <td className="song-number">{index +1}</td>
             <td className="ion-play"></td>
             <td className="ion-pause"></td>
-      checkpoint-7-bloc-jams-react-audio-playback
          <td className="song-title">{song.title}</td>
          <td className="song-duration">{song.duration}
         </td>
