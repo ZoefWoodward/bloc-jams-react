@@ -15,7 +15,7 @@
              <span className="ion-skip-forward"></span>
            </button>
          </section>
-         <section id="time-control">                                                                    
+         <section id="time-control">                                                          
            <div className="current-time">–:––</div>
            <input type="range" className="seek-bar" value="0" />
            <div className="total-time">–:––</div>
