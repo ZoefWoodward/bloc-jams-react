@@ -54,15 +54,14 @@ import PlayerBar from './PlayerBar';
      }
      
      handleNextClick(){
-         const currentIndex = this.state.album.songs.findIndex(song => this.currentSong === song);
-         const newIndex = Math.max(currentIndex +1, this.state.album.songs.length -1);
+         const currentIndex = this.state.album.songs.findIndex(song => this.state.currentSong === song);
+         const newIndex = Math.min(currentIndex +1, this.state.album.songs.length -1);
          const newSong = this.state.album.songs[newIndex];
          this.setSong (newSong);
          this.play(newSong);
          
      }
     
-   
      
   render() {
      return (
@@ -89,12 +88,13 @@ import PlayerBar from './PlayerBar';
          {
         this.state.album.songs.map( (song, index) => 
          <tr className="song" key={index} onClick={() => this.handleSongClick(song)}>
-         <button>
+             <button>
             <span className="song-number">{index +1}</span>
             <span className="ion-play"></span>
             <span className="ion-pause"></span>
-         </button>
-         <td className="song-title">{song.title}</td>
+            </button>
+
+      <td className="song-title">{song.title}</td>
          <td className="song-duration">{song.duration}
         </td>
         </tr>
