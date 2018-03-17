@@ -5,16 +5,20 @@ import Landing from './components/Landing';
 import Library from './components/Library';
 import Album from './components/Album';
 
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header> 
-            <nav>
-                <Link to='/'>Landing</Link> 
+        <a href="http://tinypic.com?ref=vgle1s"><img src="http://i64.tinypic.com/vgle1s.png" border="0" alt="Background futuristic woman"></img></a>
+            
+        <section className="nav-bar">
+        <nav>
+                <Link to='/'>SoundFusion</Link> 
                 <Link to='/library'>Library</Link>
             </nav>
-            <h1> Bloc Jams </h1>
+        </section>
         </header>
        <main>
         <Route exact path="/" component={Landing} />

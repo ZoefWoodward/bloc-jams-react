@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  
+    
+    
 }
 
 .App-logo {
@@ -7,20 +9,75 @@
   height: 80px;
 }
 
-.App-header {
-  background-color: #222;
+.landing-header {
+  background: transparent;
+  background-color: transparent;
+  border-color: transparent;
   height: 150px;
-  padding: 20px;
-  color: white;
+  padding: 0px;
+  color: transparent;
 }
 
-.App-title {
-  font-size: 1.5em;
+.nav-bar {
+    /* Library: */
+font-family: AvenirNext-Bold;
+font-size: 24px;
+color: rgba(255,255,255,0.87);
+letter-spacing: 0.25px;
+    /* SoundFusion: */
+font-family: AvenirNext-Bold;
+font-size: 36px;
+color: rgba(255,255,255,0.87);
+letter-spacing: 0.25px;
+    /* Rectangle: */
+background: rgba(216,216,216,0.00);
+    float: top-left;
 }
 
 .App-intro {
   font-size: large;
 }
+
+.header-title {
+  font-size: 1.5em;
+}
+
+
+.point1 {
+    /* Mobile enabled Liste: */
+font-family: AvenirNext-medium;
+font-size: 18px;
+color: #5E5E5E;
+letter-spacing: 0.25px;
+text-align: center;
+float: left;
+width: 33%;
+}
+
+
+.point2 {
+/* Unlimited, streaming: */
+font-family: AvenirNext-medium;
+font-size: 18px;
+color: #5E5E5E;
+letter-spacing: 0.25px;
+text-align: center;
+    text-align-last: center;
+float: left;
+width: 33%;
+    }
+ 
+.point3 {
+/* Mobile enabled Liste: */
+font-family: AvenirNext-medium;
+font-size: 18px;
+color: #5E5E5E;
+letter-spacing: 0.25px;
+text-align: center;
+float: left;
+width: 33%;
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
