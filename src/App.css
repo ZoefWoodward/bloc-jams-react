@@ -2,14 +2,15 @@
 
 }
 
-#Background {
-    height: 800px;
+.landing-background {
+    height: 750px;
     width:100%;
     position: absolute;
     z-index: 1;
+    background-image: url("http://i64.tinypic.com/vgle1s.jpg");
 }
 
-.nav-bar {
+#nav-bar {
 position: absolute;
 /* SoundFusion: */
 font-family: AvenirNext-medium;
@@ -20,7 +21,7 @@ z-index: 2;
 width: 100%;
 }
 
-.soundfusion {
+.topleft {
 /* SoundFusion: */
 font-family: AvenirNext-bold;
 font-size: 28px;
@@ -29,10 +30,11 @@ letter-spacing: 0.25px;
 width: 20%;
 float: left;
 text-align: center;
+border: none;
 text-decoration: none !important;
 }
 
-.library {
+.topright {
 /* Library: */
 font-family: AvenirNext-medium;
 font-size: 18px;
@@ -46,14 +48,13 @@ text-decoration: none !important;
 }
 
 .selling-points-container {
-padding: 50px;
+padding: 20px;
 position: absolute;
-    
 }
 
 .point1 {
  /* Mobile enabled Liste: */
-font-family: AvenirNext-Bold;
+font-family: AvenirNext-medium;
 font-size: 18px;
 color: #5E5E5E;
 letter-spacing: 0.25px; 
@@ -61,25 +62,18 @@ width: 33%;
 float: left;
 text-align: center;
 position: relative;
-padding-top: 800px
+padding-top: 800px;
+padding-bottom: 50px;
+}
+
+.point-title1 {
+    font-family: AvenirNext-Bold;
+    font-size: 20px;
 }
 
 .point2 {
  /* Unlimited, streaming: */
-font-family: AvenirNext-Bold;
-font-size: 18px;
-color: #5E5E5E;
-letter-spacing: 0.25px;
-width: 33%;
-float: left;
-text-align: center;
-position: relative;
-padding-top: 800px
-}
-
-.point3 {
-  /* Choose your music Wh: */
-font-family: AvenirNext-Bold;
+font-family: AvenirNext-medium;
 font-size: 18px;
 color: #5E5E5E;
 letter-spacing: 0.25px;
@@ -88,6 +82,31 @@ float: left;
 text-align: center;
 position: relative;
 padding-top: 800px;
+padding-bottom: 50px;
+}
+
+.point-title2 {
+    font-family: AvenirNext-Bold;
+    font-size: 20px;
+}
+
+.point3 {
+  /* Choose your music Wh: */
+font-family: AvenirNext-medium;
+font-size: 18px;
+color: #5E5E5E;
+letter-spacing: 0.25px;
+width: 33%;
+float: left;
+text-align: center;
+position: relative;
+padding-top: 800px;
+padding-bottom: 50px;
+}
+
+.point-title3 {
+    font-family: AvenirNext-Bold;
+    font-size: 20px;
 }
 
 @keyframes App-logo-spin {

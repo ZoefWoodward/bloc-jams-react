@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Landing = () => (
-
+    <section className="landing-background">
+    
     <section className="selling-points-container">
     
       <div className="point1">
@@ -22,6 +23,7 @@ const Landing = () => (
         <p className="point-description3">Listen to your music on the go. Available on all mobile platforms.</p>
       </div>
     
+    </section>
     </section>
   
 );

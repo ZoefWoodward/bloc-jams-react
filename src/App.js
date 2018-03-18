@@ -11,20 +11,13 @@ class App extends Component {
     return (
       <div className="App">
         <header> 
-        <img id="Background" src="http://i64.tinypic.com/vgle1s.png" border="0" alt="Background of futuristic woman"></img>
-        
-    <section className="nav-bar">
-        <div className="soundfusion">
-          <nav>
-            <Link to='/'>SoundFusion</Link></nav>
-        </div>
-        <div className="library">
-          <nav>
-               <Link to='/library'>Library</Link>
+          <nav id="nav-bar">
+            <div className="topleft">
+              <Link style={{color: (255,255,255,0.87)}} to ="/">SoundFusion</Link></div>
+            <div className="topright">
+              <Link style={{color: (255,255,255,0.87)}} to ="/library">Library</Link></div>
           </nav>
-         </div>
-     </section>
-        
+
        <main>
         <Route exact path="/" component={Landing} />
         <Route path="/library" component={Library} />
@@ -37,3 +30,5 @@ class App extends Component {
 }
 
 export default App;
+
+
