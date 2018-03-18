@@ -11,20 +11,26 @@ class App extends Component {
     return (
       <div className="App">
         <header> 
-        <a href="http://tinypic.com?ref=vgle1s"><img src="http://i64.tinypic.com/vgle1s.png" border="0" alt="Background futuristic woman"></img></a>
-            
-        <section className="nav-bar">
-        <nav>
-                <Link to='/'>SoundFusion</Link> 
-                <Link to='/library'>Library</Link>
-            </nav>
-        </section>
-        </header>
+        <img id="Background" src="http://i64.tinypic.com/vgle1s.png" border="0" alt="Background of futuristic woman"></img>
+        
+    <section className="nav-bar">
+        <div className="soundfusion">
+          <nav>
+            <Link to='/'>SoundFusion</Link></nav>
+        </div>
+        <div className="library">
+          <nav>
+               <Link to='/library'>Library</Link>
+          </nav>
+         </div>
+     </section>
+        
        <main>
         <Route exact path="/" component={Landing} />
         <Route path="/library" component={Library} />
         <Route path="/album/:slug" component={Album} />
         </main>
+       </header>
       </div>
     );
   }
