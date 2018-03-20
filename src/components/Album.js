@@ -119,17 +119,19 @@ import './../App.js';
    
   render() {
      return (
+         
      <section className="album">
          <section id="album-info">
-         <img id="album-cover-art" alt="Album cover art" src={this.state.album.albumCover} />
-         <div className="album-details">
+         <img id="album-cover-art" alt="Album cover art" src={this.state.album.albumPageCover} />
+         <div className="album-details" style={{visibility: 'hidden'}}>
          <h1 id="album-title">{this.state.album.title}</h1>
          <h2 className="artist">{this.state.album.artist}</h2>
-         <div id="release-info">
+         <div id="release-info" >
          {this.state.album.releaseInfo}
          {this.state.album.year} 
          {this.state.album.label}</div>
            </div>
+         
          </section>
          <table id="song-list">
          <colgroup>
@@ -137,6 +139,7 @@ import './../App.js';
          <col id="song-title-column" />
          <col id="song-duration-column" />
          </colgroup>
+         
          
          <tbody>
          {
@@ -150,6 +153,7 @@ import './../App.js';
          <td className="song-duration">{song.duration}
         </td>
         </tr>
+      
      )}
           </tbody>
          </table>

@@ -1,8 +1,20 @@
 import React from 'react';
 
 const Landing = () => (
-    <section className="landing-background">
     
+<section className="landing-background">
+    <div className="wrapper"> 
+    
+        <img src="http://i67.tinypic.com/2n9hmqr.jpg" style={{ width: '100%', height: '100%' }}border="0" alt="futuristic woman"></img>
+     
+    <div className="landing-tagline">
+        <p className="landing-tagline-text" style={{ color: 'white' }}>Don't Search.
+        <p>Just Listen. </p></p>
+    
+    
+    </div>
+    </div>
+
     <section className="selling-points-container">
     
       <div className="point1">
@@ -13,7 +25,7 @@ const Landing = () => (
     
       <div className="point2">
     <a href="http://tinypic.com?ref=2rnx7d1"><img src="http://i68.tinypic.com/2rnx7d1.png" border="0" alt="Streaming Icon"></img></a>
-        <h2 className="point-title2">Unlimited, streaming, ad-free</h2>
+        <h2 className="point-title2">Unlimited, streaming, ad-free </h2>
         <p className="point-description2">No arbitrary limits. No distractions.</p>
       </div>
     
