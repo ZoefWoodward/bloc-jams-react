@@ -15,7 +15,8 @@ class Library extends Component {
         <div><h1 className="library-title"> ALBUMS </h1>
           <p className="library-text"> Discover a new sound. Out now worldwide. </p></div>
             
-             <section className='library-list'>  
+             <section className='library-list'>
+            
             <img src= {this.state.albums.albumCover} alt={this.state.albums.title} />
             
             <h2 id="album-title">

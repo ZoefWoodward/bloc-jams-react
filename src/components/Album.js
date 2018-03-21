@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import albumData from './../data/albums';
+import Ionicon from 'react-ionicons';
 import PlayerBar from './PlayerBar';
 import './../App.js';
+import './../App.css';
 
  class Album extends Component {
    constructor(props) {
@@ -18,7 +20,8 @@ import './../App.js';
          currentVolume: 0.5,
          volumePercent: 100,
          duration: album.songs[0].duration,
-         isPlaying: false
+         isPlaying: false,
+         isHovered: false,
      };
        
     this.audioElement = document.createElement('audio');
@@ -45,7 +48,6 @@ import './../App.js';
      
      componentWillUnmount(){
          this.audioElement.src = null;
-         this.audioElement = null;
          this.audioElement.removeEventListener('timeupdate', this.eventListeners.timeupdate);
          this.audioElement.removeEventListener('durationchange', this.eventListeners.durationchange);
          this.audioElement.removeEventListener('volumechange', this.eventListeners.volumechange);
@@ -122,17 +124,10 @@ import './../App.js';
          
      <section className="album">
          <section id="album-info">
-         <img id="album-cover-art" alt="Album cover art" src={this.state.album.albumPageCover} />
-         <div className="album-details" style={{visibility: 'hidden'}}>
-         <h1 id="album-title">{this.state.album.title}</h1>
-         <h2 className="artist">{this.state.album.artist}</h2>
-         <div id="release-info" >
-         {this.state.album.releaseInfo}
-         {this.state.album.year} 
-         {this.state.album.label}</div>
-           </div>
+         <img id="album-cover-art" style={{width: '100%', height: '100%'}} alt="Album cover art" src={this.state.album.albumPageCover} />
+        
          
-         </section>
+         <section className="playerbar-wrapper">
          <table id="song-list">
          <colgroup>
          <col id="song-number-column" />
@@ -140,15 +135,25 @@ import './../App.js';
          <col id="song-duration-column" />
          </colgroup>
          
-         
          <tbody>
          {
         this.state.album.songs.map( (song, index) => 
 
-        <tr className="song" key={index} onClick={() => this.handleSongClick(song)}>
-            <td className="song-number">{index +1}</td>
-            <td className="ion-play"></td>
-            <td className="ion-pause"></td>
+        <tr className="song" key={index} onClick={() => this.handleSongClick(song)}
+            onMouseEnter={() => this.setState({isHovered: index +1})}
+            onMouseLeave={() => this.setState({isHovered: false })}>
+    
+            <td className="song-actions">
+                {(this.state.isPlaying) ?
+                 <span> {(this.state.currentSong.title === song.title) ? 
+                 <Ionicon icon= "ios-pause"/> 
+                 :<span>{index + 1 + "."}</span> }</span>
+                :
+                 (this.state.isHovered === index+1) ?
+                     <span><Ionicon icon="ios-play"/></span>
+                 : <span className="song-number">{index + 1 + "."}</span>
+                }
+                </td>
          <td className="song-title">{song.title}</td>
          <td className="song-duration">{song.duration}
         </td>
@@ -173,6 +178,8 @@ import './../App.js';
             formatDuration={this.formatTime(this.state.duration - this.state.currentTime)}
          />
        </section>
+</section>
+</section>
      );
    }
  }

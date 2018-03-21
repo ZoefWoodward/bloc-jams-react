@@ -12,9 +12,9 @@ class App extends Component {
       <div className="App">
         <header> 
           <nav id="nav-bar">
-            <div className="topleft"> 
+            <div className= "top-left"> 
             <Link to="/" style={{ textDecoration:'none', color: '#8E8D8E'}}>SoundFusion</Link></div>
-            <div className="topright">
+            <div className="top-right">
         <Link to="/library" style={{textDecoration: 'none',  color: '#8E8D8E'}}>Library</Link></div>
           </nav>
 

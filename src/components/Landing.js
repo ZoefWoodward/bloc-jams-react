@@ -3,15 +3,14 @@ import React from 'react';
 const Landing = () => (
     
 <section className="landing-background">
+    
     <div className="wrapper"> 
     
-        <img src="http://i67.tinypic.com/2n9hmqr.jpg" style={{ width: '100%', height: '100%' }}border="0" alt="futuristic woman"></img>
+        <img src="http://i67.tinypic.com/2n9hmqr.jpg" border="0" alt="futuristic woman"></img>
      
     <div className="landing-tagline">
-        <p className="landing-tagline-text" style={{ color: 'white' }}>Don't Search.
-        <p>Just Listen. </p></p>
-    
-    
+        <h1 className="landing-tagline-text" style={{ color: 'white' }}>Don't Search.
+        <p>Just Listen. </p></h1>
     </div>
     </div>
 
