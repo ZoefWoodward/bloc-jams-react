@@ -27,14 +27,17 @@ div.landing-tagline {
     letter-spacing: .50px;
 }
 
+.img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
 
 .landing-background {
     display: block;
     height: 750px;
     width: 100%;
-    position: static;
     padding-top: 50px;
-    flex-direction: column;
 }
 
 
@@ -76,15 +79,13 @@ div.landing-tagline {
     float: left;
     text-align: center;
     position: relative;
-    display: flex;
-    height: 100px;
+    display: block;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    flex: 100%;
     max-width: 33%;
-    padding-top: 10%;
-    padding-bottom: 10%; 
+    padding-top: 5%;
+    padding-bottom: 5%; 
+    
 }
 
 
@@ -163,7 +164,7 @@ color: #5E5E5E;
 .playerbar-wrapper {
     z-index: 1;
     display: flex-inline;
-    position: fixed;
+    position: absolute;
     top: 40%;
-    left: 61%;
+    left: 50%;
 }

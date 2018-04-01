@@ -124,7 +124,7 @@ import './../App.css';
          
      <section className="album">
          <section id="album-info">
-         <img id="album-cover-art" style={{width: '100%', height: '100%'}} alt="Album cover art" src={this.state.album.albumPageCover} />
+         <img id="album-cover-art" style={{width: '70%', height: '80%'}} alt="Album cover art" src={this.state.album.albumPageCover} />
         
          
          <section className="playerbar-wrapper">
