@@ -7,8 +7,9 @@ const Landing = () => (
     <div className="wrapper"> 
             <img className="img" src="http://i67.tinypic.com/2n9hmqr.jpg" border="0" alt="futuristic woman"></img>
         <div className="landing-tagline">
-            <h1 className="landing-tagline-text" style={{ color: 'white' }}>Don't Search.
-            <p>Just Listen. </p></h1>
+            <h1 className="dont-search"> Don't Search.
+            </h1>
+            <p className="just-listen"> Just Listen. </p>
         </div>
     </div>
 
