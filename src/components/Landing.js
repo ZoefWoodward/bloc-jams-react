@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Landing = () => (
-    
+    var apostrophe = "'"
 <section className="landing-background">
     
     <div className="wrapper"> 
             <img className="img" src="http://i67.tinypic.com/2n9hmqr.jpg" border="0" alt="futuristic woman"></img>
         <div className="landing-tagline">
-            <h1 className="dont-search"> Don't Search.
+            <h1 className="dont-search"> Don{apostrophe}t Search.
             </h1>
             <p className="just-listen"> Just Listen. </p>
         </div>

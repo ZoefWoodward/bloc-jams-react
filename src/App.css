@@ -74,6 +74,9 @@ div.landing-tagline {
     max-width: 950px;
 }
 
+.selling-points-container {
+    max-width: 1000px;
+}
 
 .point1, .point2, .point3 {
     letter-spacing: 0.25px; 
@@ -86,8 +89,7 @@ div.landing-tagline {
     justify-content: center;
     max-width: 33%;
     padding-top: 5%;
-    padding-bottom: 5%; 
-    
+    padding-bottom: 5%;  
 }
 
 
