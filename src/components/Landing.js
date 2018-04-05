@@ -11,7 +11,7 @@ const Landing = () => (
             </h1>
             <p className="just-listen"> Just Listen. </p>
         </div>
-    </div>
+    </div> 
 
     <section className="selling-points-container">
     

@@ -47,7 +47,7 @@ div.landing-tagline {
     font-family: AvenirNext-medium;
     letter-spacing: 0.25px;
     width: 99%; 
-    z-index: 1;
+    z-index: 2;
 }
 
 
@@ -105,51 +105,45 @@ color: #5E5E5E;
 }
 
 
-.library-details {
+.library-header {
     color: rgba(142,141,142,0.87);
     letter-spacing: 0.25px;
     font-family: AvenirNext-medium;
-    display: block;
-    max-width: 33%;
-    z-index: -1;
+    display: flex;    
+    padding-left: 20px;
 }
 
 
-.library-title {
+.library-header-title {
 /* ALBUMS: */
     font-size: 28px;
-    display: block;
-    padding-top: 50%;
-    padding-left: 1%;
-    padding-right: 66%;
-    position: fixed; 
-    z-index: -1;
+    padding-top: 600px;
+    
 }
 
 
-.library-text {
+.library-header-text {
 /* Discover a ne: */
     font-size: 16px;
+}
+
+.library-header-text, .library-header-title {
     display: block;
-    padding-top: 60%;
-    padding-left: 1%;
-    padding-right: 66%;
-    position: fixed;  
+    position: inherit;
+    max-width: 60%;
+    z-index: -1;
 }
 
 
 .library-list {
     display: flex;
     flex-direction: column;
-    flex: 99%;
-    max-width: 99%;
     justify-content: center;
     left: 40%;
     right: 60%;
     position: absolute;
     height: 850px;
-    align-content: flex-start;
-    z-index: -1;
+    z-index: 1;
 }
 
 .album {
